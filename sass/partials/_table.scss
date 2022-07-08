@@ -1,0 +1,22 @@
+@import "./varColor";
+
+table{
+    border:solid 1px rgba(0,0,0,.15);
+    width: 100%;
+    border-collapse: collapse;
+    thead{
+    color: #ff5900;
+    text-transform: uppercase;
+    }
+    td{
+        background-color: rgba(0,0,0,.15);
+    }
+    img{
+        height: 32px;
+    }
+    
+}
+
+
+
+

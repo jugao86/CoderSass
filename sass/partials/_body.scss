@@ -1,0 +1,64 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;400&display=swap');
+@import "./varColor";
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24pt;
+    font-weight: 100;
+    background-color: $c-dark;
+    overflow-x: hidden;
+    &::before{
+    content: "";
+    position: absolute;
+    height: 200vh;
+    width: 200vh;
+    background: $c-primary;
+    background: -moz-radial-gradient(circle, rgba(242,68,5,1) 0%, rgba(38,38,38,.0) 35%);
+    background: -webkit-radial-gradient(circle, rgba(242,68,5,1) 0%, rgba(38,38,38,.0) 35%);
+    background: radial-gradient(circle, rgba(242,68,5,1) 0%, rgba(38,38,38,.0) 35%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f24405",endColorstr="#262626",GradientType=1);
+    opacity: .15;
+    margin-top: -100vh;
+    margin-left:-100vh;
+    z-index: -1000 !important;
+    }
+    &::after{
+    content: "";
+    position: absolute;
+    height: 400vh;
+    width: 400vh;
+    background: rgb(90,50,168);
+    background: -moz-radial-gradient(circle, rgba(90,50,168,1) 0%, rgba(38,38,38,.0) 50%);
+    background: -webkit-radial-gradient(circle, rgba(90,50,168,1) 0%, rgba(38,38,38,.0) 50%);
+    background: radial-gradient(circle, rgba(90,50,168,1) 0%, rgba(38,38,38,.0) 50%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5a32a8",endColorstr="#262626",GradientType=1);
+    opacity: .25;
+    margin-top: -450vh;
+    margin-left:20vh;
+    z-index: -1000 !important;
+    }
+    /*Estilos tipograficos*/
+    h1{font-size: 100pt;font-weight: 400; margin: 0px;}
+    h2{font-size: 50pt;font-weight: 200; margin: 0px;}
+    p{font-weight: 100;}
+    span{ font-size: 14pt;text-transform: uppercase; padding: 15px;}
+    
+    main{padding-top: 150px; margin-bottom: 100px;}
+    main a{text-decoration: none;color: $c-light; border-bottom: solid 1px $c-light;}
+    main a:hover{text-decoration: none;color: $c-secondary; border-bottom: solid 1px $c-secondary;}
+
+    .btn{border-radius: 0px !important;text-decoration: none !important;padding: 25px;text-transform: uppercase;letter-spacing: 2px;}
+
+    .btn-primary{background-color: $c-primary !important; border:solid 2px $c-light;color: $c-white;}
+    .btn-primary:hover{background-color: $c-dark !important;border:solid 2px $c-primary;color: $c-primary;}
+
+    .btn-light{background-color: $c-dark !important; border:solid 2px $c-light; color: $c-light;}
+    .btn-light:hover{background-color: $c-primary !important; border:solid 2px $c-primary; color: $c-dark;}
+
+  
+    
+}
+
+
+

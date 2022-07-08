@@ -1,0 +1,76 @@
+@import "./varColor";
+
+header{
+    backdrop-filter: blur(20px);
+    @media (min-width: 992px)
+    {
+        .navbar-expand-lg .navbar-collapse {
+    display: flex!important;
+    flex-basis: auto;
+    justify-content: end;
+    }
+    }
+    .navbar{
+        padding: 0px;
+        .container-fluid{
+            .navbar-brand{
+                img{
+                    height: 50px;
+                }
+            }
+            .navbar-toggler{
+                img{
+                    height: 32px;
+                }
+            }
+            .MenuCollapse{
+                li{
+                    margin: 10px;
+                    a{
+                        text-decoration: none;
+                        color: $c-white;
+                        transition: all .3s;
+                        &:hover{
+                            color:$c-primary !important;
+                            transition: all .3s;
+                        }
+                        &::before{
+                            content: "";
+                            position:absolute;
+                            border-radius: 50%;
+                            z-index: -1;
+                            height: 44px;
+                            width: 44px;
+                            margin-left: -10px;
+                            margin-top: -100px;
+                            background-color: $c-primary;
+                            transition:  .3s all;
+                            opacity: 0;
+                        }
+                        &:hover::before{
+                            content: "";
+                            position:absolute;
+                            border-radius: 50%;
+                            z-index: -1;
+                            height: 44px;
+                            width: 44px;
+                            margin-left: -10px;
+                            margin-top: 3px;
+                            background-color: $c-primary;
+                            transition:  .3s all;
+                            opacity: 1;
+                        }
+                    }
+                    img{
+                        height: 24px;
+                        padding: 0px;
+                    }
+                    span{
+                        padding: 0px;
+                    }
+                }
+                
+            }
+        }
+    }
+}

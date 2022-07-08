@@ -1,0 +1,26 @@
+@import "./varColor";
+
+.carousel-item{
+    .ContTextHome::before{
+        content: "";
+        position: absolute;
+        width: 30%;
+        height: 75%;
+        margin-left: -50px;
+        margin-top: 10px !important;
+        background-color: $c-primary;
+        z-index: -1000;
+    }/*Medias*/
+    @media (max-width: 920px) {
+        .contImg{
+            margin-bottom: 50px;
+            img{
+                max-width: 200px;
+                height: auto;
+                margin-top: -100px;
+                margin-left: 50%;
+            
+        }
+        }
+    }
+}

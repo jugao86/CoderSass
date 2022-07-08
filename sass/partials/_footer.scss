@@ -1,0 +1,15 @@
+@import "./partials/varColor";
+
+footer{
+    background-color: rgba(255,255,255,.0);
+    backdrop-filter: blur(20px);
+    h4{
+        color: $c-white;
+    }
+    p{
+        color: $c-primary;
+    }
+    img{
+        height: 32px;
+    }
+}

@@ -1,0 +1,65 @@
+@import "./varColor";
+
+.SecHrs{
+    margin-top: 100px;
+    min-height: 40vh;
+    padding-top: 10vh;
+    .pyx-10{
+        padding-left: 75px;
+        padding-right: 75px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .btnContacta{
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 12pt;
+        padding: 3em;
+        text-decoration: none;
+        background-color: $c-primary;
+        transition: all .3s;
+        &:hover{
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 8pt;
+            padding: 3em;
+            text-decoration: none;
+            background-color: $c-secondary;
+            transition: all .3s;
+        }
+    }
+    .contHrs{
+        position: absolute;
+        z-index: -1;
+        margin-left: 0em;
+        margin-top: -2.5em;
+        overflow: hidden;
+        .textHora{
+            text-transform: uppercase;
+            font-size: 28pt;
+            color: rgba(0,0,0,.15);
+            margin: 0px;
+            white-space: nowrap;
+            margin-left: 0px;
+            margin-top: 15px;
+            letter-spacing: 0.3em;
+            background: #7D2C00;
+            background: repeating-radial-gradient(circle farthest-corner at right center, #7D2C00 20%, #FF5900 34%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: .5;
+            animation: animaTranslate 6s linear alternate infinite;
+        }
+        @keyframes animaTranslate  {
+            0%{
+                margin-left: -300px;
+            }
+        
+            100%{
+                transform: translate(30px);
+            }
+        
+        
+        }
+    }
+}

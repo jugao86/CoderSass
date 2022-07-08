@@ -1,0 +1,58 @@
+
+.bg-dinamic{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1000 !important;
+    .bg{
+        position: absolute;
+        height: 100%;
+        width: 140%;
+        background-size: 100%;
+        background-position: 0px -450px;
+        background-repeat: no-repeat;
+        animation-name: animarLinesTranslate;
+        margin-top: 100px;
+        animation-iteration-count:infinite;
+        z-index: -1000 !important;
+    }
+    .bg_01{
+        background-image: url(../assets/imgs/bg_01.svg);
+        margin-left: -20%;
+        animation-duration: 10s;
+        animation-delay: 1s;
+        opacity: .5;
+    }
+    .bg_02{
+        background-image: url(../assets/imgs/bg_02.svg);
+        margin-left: -10%;
+        animation-duration: 20s ;
+        animation-delay: .5s;
+        opacity: .5;
+
+    }
+    .bg_03{
+        background-image: url(../assets/imgs/bg_03.svg);
+        margin-left: -20%;
+        animation-duration: 60s;
+        animation-delay: 0s;
+        opacity: .5;
+    }
+    @keyframes animarLinesTranslate {
+        0% {
+            transform: translate(0px);
+            opacity: .5;
+        }
+        50% {
+            transform: translate(10%);
+            opacity: .75;
+        }
+        100% {
+            transform: translate(0px);
+            opacity: .5;
+        }
+    }
+
+}
+
+
