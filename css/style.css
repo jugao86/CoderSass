@@ -467,6 +467,38 @@ form {
     transform: scale(0.75);
     background-color: rgba(0, 0, 0, 0.25); }
 
+/*
+*/
+.text-primary {
+  color: #f24405 !important; }
+
+.text-light {
+  color: #f25c05 !important; }
+
+.text-secondary {
+  color: #8b3907 !important; }
+
+.text-white {
+  color: #f2f2f2 !important; }
+
+.card {
+  border: solid 5px rgba(0, 0, 0, 0.75);
+  height: 100%;
+  border-radius: 0px; }
+  .card .imgCards {
+    overflow: hidden; }
+    .card .imgCards img {
+      transform: scale(1.3);
+      transition: all .3s; }
+      .card .imgCards img:hover {
+        transform: scale(1.5);
+        transition: all .3s; }
+  .card h3 {
+    color: #262626; }
+  .card p {
+    font-size: 20pt;
+    color: #8b3907; }
+
 /*Variables*/
 /*
 */
