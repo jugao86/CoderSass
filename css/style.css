@@ -499,6 +499,12 @@ form {
     font-size: 20pt;
     color: #8b3907; }
 
+.space-between {
+  justify-content: space-between; }
+
+.contImg {
+  height: 100%; }
+
 /*Variables*/
 /*
 */
