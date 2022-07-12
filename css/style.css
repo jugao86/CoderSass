@@ -18,7 +18,6 @@
 body {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 24pt;
-  font-weight: 100;
   background-color: #262626;
   overflow-x: hidden;
   /*Estilos tipograficos*/ }
@@ -65,7 +64,7 @@ body {
     text-transform: uppercase;
     padding: 15px; }
   body main {
-    padding-top: 150px;
+    padding-top: 50px;
     margin-bottom: 100px; }
   body main a {
     text-decoration: none;
@@ -130,7 +129,9 @@ header {
       header .navbar .container-fluid .MenuCollapse li a {
         text-decoration: none;
         color: #f2f2f2;
-        transition: all .3s; }
+        transition: all .3s;
+        font-weight: 400;
+        margin-left: 25px; }
         header .navbar .container-fluid .MenuCollapse li a:hover {
           color: #f24405 !important;
           transition: all .3s; }
@@ -162,7 +163,8 @@ header {
         height: 24px;
         padding: 0px; }
       header .navbar .container-fluid .MenuCollapse li span {
-        padding: 0px; }
+        padding: 0px;
+        margin-left: 10px; }
 
 /*
 */
@@ -398,8 +400,7 @@ form {
   padding: 0px; }
   form fieldset {
     border: solid 1px rgba(0, 0, 0, 0.15);
-    padding: 2em;
-    margin-top: 2em; }
+    padding: 2em; }
     form fieldset label {
       color: #f2f2f2; }
     form fieldset .inputType {
@@ -411,7 +412,12 @@ form {
       padding: 10px;
       background-color: rgba(0, 0, 0, 0.15);
       border: none;
-      color: #f2f2f2; }
+      color: #f2f2f2;
+      margin-bottom: 50px;
+      transition: all 1.3s; }
+      form fieldset .inputType:focus {
+        outline: solid 1px #f24405;
+        transition: all 1.3s; }
     form fieldset select {
       height: 42px;
       width: 100%;
@@ -423,6 +429,9 @@ form {
       color: #fff;
       outline: none;
       font-size: 14pt; }
+      form fieldset select:focus {
+        outline: solid 1px #f24405;
+        transition: all 1.3s; }
     form fieldset textarea {
       width: 100%;
       max-width: 98%;
@@ -431,6 +440,9 @@ form {
       color: #fff;
       font-size: 14pt;
       border: solid 1px rgba(0, 0, 0, 0.25); }
+      form fieldset textarea:focus {
+        outline: solid 1px #f24405;
+        transition: all 1.3s; }
   form #btnSend {
     border: none;
     padding: 1em;
@@ -458,14 +470,30 @@ form {
       background-color: rgba(0, 0, 0, 0.25);
       transition: all .3s; }
 
+/*
+*/
+.text-primary {
+  color: #f24405 !important; }
+
+.text-light {
+  color: #f25c05 !important; }
+
+.text-secondary {
+  color: #8b3907 !important; }
+
+.text-white {
+  color: #f2f2f2 !important; }
+
 .hoverMarcas {
+  background-color: rgba(0, 0, 0, 0);
   transition: all .3s;
   transform: scale(1);
-  background-color: rgba(0, 0, 0, 0); }
+  filter: blur(1px); }
   .hoverMarcas:hover {
+    background-color: rgba(0, 0, 0, 0.5);
     transition: all .3s;
-    transform: scale(0.75);
-    background-color: rgba(0, 0, 0, 0.25); }
+    transform: scale(0.95);
+    filter: blur(0px); }
 
 /*
 */
@@ -484,14 +512,22 @@ form {
 .card {
   border: solid 5px rgba(0, 0, 0, 0.75);
   height: 100%;
-  border-radius: 0px; }
+  text-decoration: none;
+  border-radius: 0px;
+  border: solid 2px rgba(0, 0, 0, 0.75);
+  transition: all .3s; }
+  .card:hover {
+    border-radius: 0px;
+    border: solid 2px #f24405;
+    transition: all .3s; }
   .card .imgCards {
     overflow: hidden; }
     .card .imgCards img {
+      width: 100%;
       transform: scale(1.3);
       transition: all .3s; }
       .card .imgCards img:hover {
-        transform: scale(1.5);
+        transform: scale(1.35);
         transition: all .3s; }
   .card h3 {
     color: #262626; }

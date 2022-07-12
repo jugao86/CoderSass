@@ -30,6 +30,8 @@ header{
                         text-decoration: none;
                         color: $c-white;
                         transition: all .3s;
+                        font-weight: 400;
+                        margin-left: 25px;
                         &:hover{
                             color:$c-primary !important;
                             transition: all .3s;
@@ -67,6 +69,7 @@ header{
                     }
                     span{
                         padding: 0px;
+                        margin-left: 10px;
                     }
                 }
                 

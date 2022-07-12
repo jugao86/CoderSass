@@ -5,7 +5,6 @@
 body{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 24pt;
-    font-weight: 100;
     background-color: $c-dark;
     overflow-x: hidden;
     &::before{
@@ -44,7 +43,7 @@ body{
     p{font-weight: 100;}
     span{ font-size: 14pt;text-transform: uppercase; padding: 15px;}
     
-    main{padding-top: 150px; margin-bottom: 100px;}
+    main{padding-top: 50px; margin-bottom: 100px;}
     main a{text-decoration: none;color: $c-light; border-bottom: solid 1px $c-light;}
     main a:hover{text-decoration: none;color: $c-secondary; border-bottom: solid 1px $c-secondary;}
 

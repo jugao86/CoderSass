@@ -3,14 +3,21 @@
 .card{
     border:solid 5px rgba(0, 0, 0, .75);
     height: 100%;
-    border-radius: 0px;
+    text-decoration: none;
+    border-radius: 0px;border:solid 2px rgba(0, 0, 0, .75);
+    transition: all .3s;
+    &:hover{
+    border-radius: 0px;border:solid 2px $c-primary;
+    transition: all .3s;
+    }
     .imgCards{
         overflow: hidden;
         img{
+            width: 100%;
             transform: scale(1.3);
             transition: all .3s;
             &:hover{
-                transform: scale(1.5);
+                transform: scale(1.35);
                 transition: all .3s;  
             }
         }
