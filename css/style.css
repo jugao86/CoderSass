@@ -209,19 +209,19 @@ footer {
   .bg-dinamic .bg_01 {
     background-image: url(../assets/imgs/bg_01.svg);
     margin-left: -20%;
-    animation-duration: 10s;
-    animation-delay: 1s;
+    animation-duration: 5s;
+    animation-delay: 0s;
     opacity: .5; }
   .bg-dinamic .bg_02 {
     background-image: url(../assets/imgs/bg_02.svg);
     margin-left: -10%;
-    animation-duration: 20s;
+    animation-duration: 10s;
     animation-delay: .5s;
     opacity: .5; }
   .bg-dinamic .bg_03 {
     background-image: url(../assets/imgs/bg_03.svg);
     margin-left: -20%;
-    animation-duration: 60s;
+    animation-duration: 30s;
     animation-delay: 0s;
     opacity: .5; }
 @keyframes animarLinesTranslate {
